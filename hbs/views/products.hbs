@@ -1,0 +1,26 @@
+<div class="table-responsive-sm"></div>
+{{#if showList}}
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col"><b>Nombre</b></th>
+                <th scope="col"><b>Precio</b></th>
+                <th scope="col"><b>Imagen</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each list}}
+            <tr>
+                <th scope="row">{{this.title}}</td>
+                <td>{{this.price}}</td>
+                <td><img src="{{this.thumbail}}" width="100px;"/></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+        
+{{else}}
+    No hay lista    
+{{/if}}
+<div class="table-responsive-sm">
+<a class="btn btn-dark btn-lg active" href="/" role="button" aria-pressed="true">Nuevo Producto</a>

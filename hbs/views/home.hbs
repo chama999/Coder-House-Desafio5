@@ -1,0 +1,26 @@
+<h1><u>Desafio 5</h1></u>
+    <div>
+        <h3>Carga Producto</h3>
+        <form 
+        action="/api/productos" 
+        method="post" 
+        enctype="multipart/form-data">
+
+        <form>
+        <div class="form-group">
+            <label for="title">Nombre*</label>
+            <input name="title" type="text" class="form-control" id="title" placeholder="Nombre del Producto">
+        </div>
+        <div class="form-group">
+            <label for="price">Precio*</label>
+            <input name="price" type="text" class="form-control" id="price" placeholder="Precio del Producto">
+        </div>
+        <div class="form-group">
+            <input type="file" class="form-group-file" name="thumbail" id="file">
+        </div>
+          <button type="submit" class="btn btn-dark">Crear</button>
+        </form>
+        <div>
+            <a href="/lista">Ver Lista de productos</a>
+        </div>
+    </div>
